@@ -1,59 +1,55 @@
-> 📄 **New here?** 👉 [See how to use this template →](./TEMPLATE-INSTRUCTIONS.md)
+# 🌳 Depth First Values (Binary Tree)
 
-# 🧠 [EXERCISE TITLE HERE]
-
-_A quick one-liner describing the problem._  
-_Example: Check if two strings are anagrams._
+_Given a binary tree, return an array containing the values of the tree in depth-first order (pre-order traversal)._
 
 ## ✍️ Your Task
 
-Your goal is to solve the coding challenge using a clear and efficient solution.
-
-1. Read the problem and input/output requirements
-2. Implement your solution in `src/main.mjs`
-3. Run tests with `npm run test` to validate your solution
+1. Read the problem and requirements carefully
+2. Write your implementation in `src/main.mjs`
+3. Test your solution with `npm run test`
 
 ## 📘 Description
 
-Describe the problem in detail.
+Given a binary tree, traverse the nodes using **depth-first search** (DFS) and return an array with the node values in the order they were visited.
 
-Example:
+Use **pre-order traversal**: root → left → right.
 
-Given two strings `s1` and `s2`, return `true` if `s2` is an anagram of `s1`, and `false` otherwise.
+You may assume each node has the following structure:
 
-An anagram is a word or phrase formed by rearranging the letters of a different word.
+```js
+class Node {
+  constructor(val) {
+    this.val = val
+    this.left = null
+    this.right = null
+  }
+}
+```
 
 ## 📥 Input
 
-- `s1`: a string (1 ≤ s1.length ≤ 10⁵)
-- `s2`: a string (1 ≤ s2.length ≤ 10⁵)
-- No spaces, only lowercase letters
+- A binary tree with `1 <= number of nodes <= 10⁴`
+- Each node contains an integer value
 
 ## 📤 Output
 
-- Returns `true` or `false`
+- An array of values visited in depth-first order
 
 ## 🛠️ Instructions
 
-1. Open the file `src/main.mjs` and implement the solution.
+1. Open the file `src/main.mjs` and implement the `depthFirstValues` function.
 2. To verify your solution, run the tests in `src/main.test.js` using:
 
 ```bash
 npm run test
 ```
 
-> ✅ Do not modify the test file unless you’re adding extra edge cases.
+✅ Do not modify the test file unless you're adding extra edge cases.
 
 ## 💡 Tips
 
-_You can add any tips or hints that might help the user solve the problem._
-
-For example:
-
-- Use `.toLowerCase()` if needed
-- Use objects, arrays or `Map` to count character frequencies
-- Aim for O(n) time complexity if possible
-- Compare frequency maps or use one-pass counter
+- This is a great opportunity to practice **recursion**
+- You can also solve it using an **explicit stack**
 
 ## 🧪 Run Tests
 
@@ -65,5 +61,3 @@ npm run test
 ```
 
 ✅ Make sure your implementation is in `src/main.mjs` and your tests in `src/main.test.js`.
-
-Happy coding! 🚀

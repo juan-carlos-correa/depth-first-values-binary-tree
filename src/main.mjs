@@ -1,14 +1,21 @@
+// src/main.js
+
 /**
- * [Your function description here]
- * [Your parameters description here]
- * Example:
- * @param {string} str1
- *
- * [What the function returns]
- * Example:
- * @returns {boolean}
+ * Binary Tree Node class
  */
-export function myFunction(s1, s2) {
-  // TODO: implement
-  return false;
+export class Node {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+/**
+ * Returns an array of values from a binary tree in depth-first order.
+ * @param {Node|null} root - The root node of the binary tree.
+ * @returns {string[]} - Array of values in depth-first traversal order.
+ */
+export function depthFirstValues(root) {
+  // TODO: implement this function
 }
